@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The Walking Dead - Michael Bosik</title>
+<link rel="stylesheet" type="text/css" href="../css/twd.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="icon" href="../images/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body style="background-image:url(../images/background.jpg); background-repeat:no-repeat; background-attachment:fixed; background-size: cover;">
+<ul class="topnav" id="myTopnav">
+  <li><a href="twd.html">Home</a></li>
+  <li><a href="good.html">Protagonists</a></li>
+  <li><a href="bad.html">Antagonists</a></li>
+  <li><a href="walkers.html">Walkers</a></li>
+  <li><a href="places.html">Places</a></li>
+  <li><a href="famousdeaths.html">Famous Deaths</a></li>
+</ul>
+<div class="w3-content" style="max-width:1400px">
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <img src="../images/banner.png" width="50%">
+  <p style="color:white">A final project by: <span class="w3-tag">Michael Bosik</span></p>
+  <center>
+  <div class="w3-card-4 w3-margin w3-white" style="width: 50%">
+    <h1 style="color:red">THIS WEBSITE CONTAINS SPOILERS!!!</h1>
+  </div>
+  </center>
+</header>
+
+<!-- Slideshow -->
+
+<center>
+<div class="w3-card-4 w3-margin w3-white" style="width: 1000px">
+<div class="w3-content w3-display-container" style="padding:20px">
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/R1v0uFms68U" frameborder="0" allowfullscreen>Season 1 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/1OZ0mu8Ey6A" frameborder="0" allowfullscreen>Season 2 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/38EKul6-LU0" frameborder="0" allowfullscreen>Season 3 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/FSi2fJALDyQ" frameborder="0" allowfullscreen>Season 4 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/Zcp2SNId6i8" frameborder="0" allowfullscreen>Season 5 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/Va1UPrFXHKA" frameborder="0" allowfullscreen>Season 6 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/SmUz88zoIg0" frameborder="0" allowfullscreen>Season 7 Trailer</iframe>
+  <iframe class="mySlides" width="100%" height="500px" src="https://www.youtube.com/embed/H6OwMvtdOy4" frameborder="0" allowfullscreen>Season 8 Trailer</iframe> 
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+</center>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<!--  Cards of Trailers
+
+<table width="100%">
+<tr>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 1 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/R1v0uFms68U" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 2 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/1OZ0mu8Ey6A" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+</tr>
+<tr>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 3 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/38EKul6-LU0" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 4 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/1OZ0mu8Ey6A" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+</tr>
+<tr>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 5 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/Zcp2SNId6i8" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 6 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/Va1UPrFXHKA" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+</tr>
+<tr>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 7 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/SmUz88zoIg0" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+<td>
+  <div class="w3-card-2 w3-margin w3-margin-top">
+    <div class="w3-container w3-white">
+      <h4><b>Season 8 Trailer</b></h4>
+      <center><iframe width="100%" height="315px" src="https://www.youtube.com/embed/H6OwMvtdOy4" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+</div><hr>
+</td>
+</tr>
+</table>
+
+-->
+
+</div>
+</body>
+</html>
